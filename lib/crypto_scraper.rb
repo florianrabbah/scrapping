@@ -20,7 +20,7 @@ crypto_names = doc.xpath('//tbody//td[3]//p')
 crypto_prices = doc.xpath('//tbody//td[5]//a[@data-btc]')
 
 # Crée un array vide pour stocker les hashes
-crypto_data = [ { "BTC" => 26,779.43 } , { "ETH" => 1,557.22  } ]
+crypto_data = [{ "BTC" => 26,779.43 }, { "ETH" => 1,557.22 }]
 
 # Parcourt les noms et les cours pour créer les hashes
 crypto_names.each_with_index do |name, index|
